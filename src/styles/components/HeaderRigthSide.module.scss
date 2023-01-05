@@ -1,0 +1,144 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  input {
+    border: none;
+    outline: none;
+  }
+
+  .search {
+    cursor: pointer;
+    width: 140px;
+    height: 25px;
+    padding: 0 10px;
+    background: var(--black);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+
+    span {
+      font-size: .7rem;
+      color: var(--gray-200);
+      margin-left: 10px;
+      transition: .3s;
+    }
+    span:last-child {
+      margin-left: auto;
+      font-size: .8rem;
+      color: navajowhite;
+    }
+
+    i {
+      font-size: 1.3rem;
+    }
+  }
+
+
+
+
+  label {
+    background: var(--black);
+    border-radius: 20px;
+    width: 50px;
+    height: 25px;
+    margin-right: 20px;
+  }
+
+
+  .action {
+    position: relative;
+
+
+    i {
+      position: absolute;
+      top: 4px;
+      width: 50px;
+      justify-content: space-between;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 0 2px;
+
+
+      &::after {
+        position: absolute;
+        top: 0px;
+        left: 2.5px;
+        content: "";
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        background: white;
+        transition: .3s;
+      }
+
+      span {
+        font-size: 1.2rem;
+      }
+
+      span:last-child {
+        color: var(--yellow-500);
+      }
+
+    }
+
+    > input {
+      appearance: none;
+    }
+  }
+}
+
+.modal_styles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  input {
+    border: 2px solid greenyellow;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+  }
+  .result {
+    position: absolute;
+    top: 30%;
+    left: -20px;
+    width: 108.8%;
+    min-height: 100px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    background: var(--white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+  }
+}
+
+
+.right_side_theme {
+  label {
+    background: var(--pink-50);
+  }
+  .search {
+    background: var(--pink-50);
+    span {
+      color: black;
+    }
+    span:last-child {
+      color: #8f005f;
+    }
+  }
+}
+
+.active_dark {
+  &::after {
+    left: 30px !important;
+  }
+}

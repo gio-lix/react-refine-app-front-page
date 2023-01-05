@@ -1,0 +1,64 @@
+@import "global";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  transition: .5s;
+  background: #f3f3ff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.body {
+  background: var(--background);
+  transition: .5s;
+}
+
+ul li {
+  list-style: none;
+}
+
+
+.container {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+
+
+.blog_container {
+  background: var(--background);
+  box-shadow: 10px 10px 30px rgb(56, 56, 86);
+  color: var(--white);
+  padding: 0 30px;
+  transition: .3s;
+  section {
+    min-height: 100vh;
+    height: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray-200);
+    * {
+      white-space: pre-line;
+    }
+    img {
+      width: 100%;
+    }
+
+    a {
+      color: var(--blue-500);
+    }
+  }
+}
+
+.blog_container_theme {
+  background: var(--bisque-100) !important;
+  color: black!important;
+}
