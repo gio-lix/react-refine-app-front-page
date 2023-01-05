@@ -59,11 +59,11 @@ const HeaderRightSide = () => {
                 <span className={styles.action}>
                     <input id="dark" type="checkbox"/>
                     <i onClick={handleDark} className={`${dark ? styles.active_dark : null}`}>
-                        <span  className="material-icons">
-                            nightlight
-                        </span>
                         <span className="material-icons">
                              wb_sunny
+                        </span>
+                        <span  className="material-icons">
+                            nightlight
                         </span>
                     </i>
                 </span>
